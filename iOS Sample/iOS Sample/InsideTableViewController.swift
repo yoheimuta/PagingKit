@@ -20,12 +20,12 @@ class InsideTableViewController: UIViewController {
             return 2
         }
         
-        var height: CGFloat {
+        func height(tableView: UITableView) -> CGFloat {
             switch self {
             case .menu:
                 return 44
             case .content:
-                return 200
+                return tableView.bounds.height - 44
             }
         }
     }
@@ -89,7 +89,7 @@ extension InsideTableViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Row.init(rawValue: indexPath.row)!.height
+        return Row.init(rawValue: indexPath.row)!.height(tableView: tableView)
     }
 }
 

@@ -30,11 +30,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideContentCell" rowHeight="576" id="yVq-zA-gQa" customClass="InsideContentCell" customModule="iOS_Sample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="576"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideContentCell" rowHeight="74" id="yVq-zA-gQa" customClass="InsideContentCell" customModule="iOS_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVq-zA-gQa" id="ljd-bY-Ve7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="575.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
