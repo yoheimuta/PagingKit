@@ -59,6 +59,10 @@
 		6E98279A1F0A91F400860828 /* iOS_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9827991F0A91F400860828 /* iOS_SampleUITests.swift */; };
 		6E9827B51F0A921D00860828 /* PagingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9827B41F0A921D00860828 /* PagingKit.framework */; };
 		6E9827BF1F0A958900860828 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9827BE1F0A958900860828 /* ContentViewController.swift */; };
+		FFCC562F2164BFE300226914 /* InsideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC562E2164BFE300226914 /* InsideTableViewController.swift */; };
+		FFCC56312164BFF600226914 /* InsideTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */; };
+		FFCC56372165AEAB00226914 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56362165AEAB00226914 /* MenuCell.swift */; };
+		FFCC56392165B8C700226914 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56382165B8C700226914 /* ContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +154,10 @@
 		6E98279B1F0A91F400860828 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E9827B41F0A921D00860828 /* PagingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PagingKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/PagingKit-gjksmmnsmdnihrhcnlvqtyltbdis/Build/Products/Debug-iphonesimulator/PagingKit.framework"; sourceTree = "<group>"; };
 		6E9827BE1F0A958900860828 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		FFCC562E2164BFE300226914 /* InsideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideTableViewController.swift; sourceTree = "<group>"; };
+		FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsideTableViewController.storyboard; sourceTree = "<group>"; };
+		FFCC56362165AEAB00226914 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		FFCC56382165B8C700226914 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +353,7 @@
 		6E9827781F0A91F400860828 /* iOS Sample */ = {
 			isa = PBXGroup;
 			children = (
+				FFCC562D2164BFB200226914 /* InsideTableView */,
 				2BC782882127ECEE009999F6 /* InitializingWithoutStoryboard */,
 				2B40528F20425C6C0017F90E /* DynamicWidth */,
 				2B95EA06203164890054F23E /* Alignment */,
@@ -392,6 +401,17 @@
 				6E9827B41F0A921D00860828 /* PagingKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFCC562D2164BFB200226914 /* InsideTableView */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC562E2164BFE300226914 /* InsideTableViewController.swift */,
+				FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */,
+				FFCC56362165AEAB00226914 /* MenuCell.swift */,
+				FFCC56382165B8C700226914 /* ContentCell.swift */,
+			);
+			name = InsideTableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +532,7 @@
 				2B95EA08203164AA0054F23E /* AlignmentViewController.storyboard in Resources */,
 				2BE47F081FA41AF40057A786 /* FullscreenViewController.storyboard in Resources */,
 				2B873AE31F974B3900F02D27 /* ModalViewController.storyboard in Resources */,
+				FFCC56312164BFF600226914 /* InsideTableViewController.storyboard in Resources */,
 				2B3C7CCB1F8CEF2200A43223 /* TwoLineMenuCell.xib in Resources */,
 				6E9827841F0A91F400860828 /* LaunchScreen.storyboard in Resources */,
 				2BC7828C2127EFCB009999F6 /* InitializingWithoutStoryboardViewController.storyboard in Resources */,
@@ -570,13 +591,16 @@
 				2B3C7CD11F8CF4FB00A43223 /* ViewInsertedViewController.swift in Sources */,
 				2BC7828A2127ED11009999F6 /* InitializingWithoutStoryboardViewController.swift in Sources */,
 				2B4F03521F905B930015FCC8 /* ContentTableViewCell.swift in Sources */,
+				FFCC562F2164BFE300226914 /* InsideTableViewController.swift in Sources */,
 				2B3C7CC91F8CEF1200A43223 /* TwoLineMenuCell.swift in Sources */,
 				2B45419D1FA490BE00A9B253 /* PhotoViewController.swift in Sources */,
 				2B47F87A1F5BF173001A7D2B /* DynamicSizeViewController.swift in Sources */,
 				2B47E7341F109DE400D67C04 /* OverlayFocusView.swift in Sources */,
 				2BC1B4181F19F29800829D1A /* TagViewController.swift in Sources */,
+				FFCC56392165B8C700226914 /* ContentCell.swift in Sources */,
 				2B4F03501F90575B0015FCC8 /* ContentTableViewController.swift in Sources */,
 				2B3C7CC51F8CEB0100A43223 /* TwoLineMenuViewController.swift in Sources */,
+				FFCC56372165AEAB00226914 /* MenuCell.swift in Sources */,
 				2BC1B41A1F19F4CB00829D1A /* TagMenuCell.swift in Sources */,
 				2B47E7361F10A15700D67C04 /* OverlayMenuCell.swift in Sources */,
 				2B442C261F1DA97D00135238 /* ArbitraryNumberViewController.swift in Sources */,
