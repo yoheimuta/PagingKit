@@ -61,8 +61,8 @@
 		6E9827BF1F0A958900860828 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9827BE1F0A958900860828 /* ContentViewController.swift */; };
 		FFCC562F2164BFE300226914 /* InsideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC562E2164BFE300226914 /* InsideTableViewController.swift */; };
 		FFCC56312164BFF600226914 /* InsideTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */; };
-		FFCC56372165AEAB00226914 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56362165AEAB00226914 /* MenuCell.swift */; };
-		FFCC56392165B8C700226914 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56382165B8C700226914 /* ContentCell.swift */; };
+		FFCC56372165AEAB00226914 /* InsideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56362165AEAB00226914 /* InsideMenuCell.swift */; };
+		FFCC56392165B8C700226914 /* InsideContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56382165B8C700226914 /* InsideContentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,8 +156,8 @@
 		6E9827BE1F0A958900860828 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		FFCC562E2164BFE300226914 /* InsideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideTableViewController.swift; sourceTree = "<group>"; };
 		FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsideTableViewController.storyboard; sourceTree = "<group>"; };
-		FFCC56362165AEAB00226914 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		FFCC56382165B8C700226914 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		FFCC56362165AEAB00226914 /* InsideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideMenuCell.swift; sourceTree = "<group>"; };
+		FFCC56382165B8C700226914 /* InsideContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideContentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,8 +408,8 @@
 			children = (
 				FFCC562E2164BFE300226914 /* InsideTableViewController.swift */,
 				FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */,
-				FFCC56362165AEAB00226914 /* MenuCell.swift */,
-				FFCC56382165B8C700226914 /* ContentCell.swift */,
+				FFCC56362165AEAB00226914 /* InsideMenuCell.swift */,
+				FFCC56382165B8C700226914 /* InsideContentCell.swift */,
 			);
 			name = InsideTableView;
 			sourceTree = "<group>";
@@ -597,10 +597,10 @@
 				2B47F87A1F5BF173001A7D2B /* DynamicSizeViewController.swift in Sources */,
 				2B47E7341F109DE400D67C04 /* OverlayFocusView.swift in Sources */,
 				2BC1B4181F19F29800829D1A /* TagViewController.swift in Sources */,
-				FFCC56392165B8C700226914 /* ContentCell.swift in Sources */,
+				FFCC56392165B8C700226914 /* InsideContentCell.swift in Sources */,
 				2B4F03501F90575B0015FCC8 /* ContentTableViewController.swift in Sources */,
 				2B3C7CC51F8CEB0100A43223 /* TwoLineMenuViewController.swift in Sources */,
-				FFCC56372165AEAB00226914 /* MenuCell.swift in Sources */,
+				FFCC56372165AEAB00226914 /* InsideMenuCell.swift in Sources */,
 				2BC1B41A1F19F4CB00829D1A /* TagMenuCell.swift in Sources */,
 				2B47E7361F10A15700D67C04 /* OverlayMenuCell.swift in Sources */,
 				2B442C261F1DA97D00135238 /* ArbitraryNumberViewController.swift in Sources */,

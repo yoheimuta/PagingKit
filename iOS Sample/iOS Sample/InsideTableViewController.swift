@@ -97,14 +97,14 @@ extension InsideTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case Row.menu.rawValue:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath)
-                as! MenuCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InsideMenuCell", for: indexPath)
+                as! InsideMenuCell
             cell.setContent(controller: menuViewController)
             cell.contentView.addSubview(menuViewController.view)
             return cell
         case Row.content.rawValue:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath)
-                as! ContentCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InsideContentCell", for: indexPath)
+                as! InsideContentCell
             cell.setContent(controller: contentViewController)
             cell.contentView.addSubview(contentViewController.view)
             return cell

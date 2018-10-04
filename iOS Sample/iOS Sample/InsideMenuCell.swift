@@ -1,5 +1,5 @@
 //
-//  MenuCell.swift
+//  InsideMenuCell.swift
 //  iOS Sample
 //
 //  Created by YOSHIMUTA YOHEI on 2018/10/04.
@@ -9,7 +9,7 @@
 import PagingKit
 import UIKit
 
-final class MenuCell: UITableViewCell {
+final class InsideMenuCell: UITableViewCell {
     
     private var controller: PagingMenuViewController!
     

@@ -1,5 +1,5 @@
 //
-//  ContentCell.swift
+//  InsideContentCell.swift
 //  iOS Sample
 //
 //  Created by YOSHIMUTA YOHEI on 2018/10/04.
@@ -9,7 +9,7 @@
 import PagingKit
 import UIKit
 
-final class ContentCell: UITableViewCell {
+final class InsideContentCell: UITableViewCell {
     
     private var controller: PagingContentViewController!
     
