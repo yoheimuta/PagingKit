@@ -22,16 +22,55 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideMenuCell" id="cHv-UW-ljd" customClass="InsideMenuCell" customModule="iOS_Sample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="InsideCollapseCell" rowHeight="75" id="a5O-55-Xp4" customClass="InsideCollapseCell" customModule="iOS_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a5O-55-Xp4" id="Fhs-m7-CZX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fbx-ca-ByR">
+                                                    <rect key="frame" x="23" y="11" width="329" height="49"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="PagingKit provides customizable menu UI. It has more flexible layout and design than the other libraries. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qky-ej-fQK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wm1-3q-U1U">
+                                                            <rect key="frame" x="275" y="25" width="54" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <state key="normal" title="collapse"/>
+                                                            <connections>
+                                                                <action selector="toggle:" destination="a5O-55-Xp4" eventType="touchUpInside" id="VFX-uT-nLQ"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fbx-ca-ByR" secondAttribute="bottom" constant="4" id="4UV-Bu-W3h"/>
+                                                <constraint firstItem="Fbx-ca-ByR" firstAttribute="leading" secondItem="Fhs-m7-CZX" secondAttribute="leadingMargin" constant="8" id="XQn-T7-Fk0"/>
+                                                <constraint firstItem="Fbx-ca-ByR" firstAttribute="top" secondItem="Fhs-m7-CZX" secondAttribute="topMargin" id="oSz-ST-BfH"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fbx-ca-ByR" secondAttribute="trailing" constant="8" id="zK0-SW-SHZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collapsableLabelOutlet" destination="qky-ej-fQK" id="eXB-qa-KTq"/>
+                                            <outlet property="toggleOutlet" destination="wm1-3q-U1U" id="P4m-hE-Pmh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="InsideMenuCell" id="cHv-UW-ljd" customClass="InsideMenuCell" customModule="iOS_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cHv-UW-ljd" id="UD8-5H-0FC">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InsideContentCell" rowHeight="74" id="yVq-zA-gQa" customClass="InsideContentCell" customModule="iOS_Sample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="74"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="InsideContentCell" rowHeight="74" id="yVq-zA-gQa" customClass="InsideContentCell" customModule="iOS_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="147" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yVq-zA-gQa" id="ljd-bY-Ve7">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>

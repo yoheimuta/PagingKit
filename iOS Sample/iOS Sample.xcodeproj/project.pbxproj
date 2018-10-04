@@ -63,6 +63,7 @@
 		FFCC56312164BFF600226914 /* InsideTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */; };
 		FFCC56372165AEAB00226914 /* InsideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56362165AEAB00226914 /* InsideMenuCell.swift */; };
 		FFCC56392165B8C700226914 /* InsideContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC56382165B8C700226914 /* InsideContentCell.swift */; };
+		FFCC563B2165CA4A00226914 /* InsideCollapseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC563A2165CA4A00226914 /* InsideCollapseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +159,7 @@
 		FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InsideTableViewController.storyboard; sourceTree = "<group>"; };
 		FFCC56362165AEAB00226914 /* InsideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideMenuCell.swift; sourceTree = "<group>"; };
 		FFCC56382165B8C700226914 /* InsideContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideContentCell.swift; sourceTree = "<group>"; };
+		FFCC563A2165CA4A00226914 /* InsideCollapseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideCollapseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -410,6 +412,7 @@
 				FFCC56302164BFF600226914 /* InsideTableViewController.storyboard */,
 				FFCC56362165AEAB00226914 /* InsideMenuCell.swift */,
 				FFCC56382165B8C700226914 /* InsideContentCell.swift */,
+				FFCC563A2165CA4A00226914 /* InsideCollapseCell.swift */,
 			);
 			name = InsideTableView;
 			sourceTree = "<group>";
@@ -591,6 +594,7 @@
 				2B3C7CD11F8CF4FB00A43223 /* ViewInsertedViewController.swift in Sources */,
 				2BC7828A2127ED11009999F6 /* InitializingWithoutStoryboardViewController.swift in Sources */,
 				2B4F03521F905B930015FCC8 /* ContentTableViewCell.swift in Sources */,
+				FFCC563B2165CA4A00226914 /* InsideCollapseCell.swift in Sources */,
 				FFCC562F2164BFE300226914 /* InsideTableViewController.swift in Sources */,
 				2B3C7CC91F8CEF1200A43223 /* TwoLineMenuCell.swift in Sources */,
 				2B45419D1FA490BE00A9B253 /* PhotoViewController.swift in Sources */,

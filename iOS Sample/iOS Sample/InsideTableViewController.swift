@@ -12,16 +12,19 @@ import PagingKit
 class InsideTableViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
-    enum Row: Int {
+    enum Row: Int, CaseIterable {
+        case collapse
         case menu
         case content
         
         static var numberOfRows: Int {
-            return 2
+            return Row.allCases.count
         }
         
         func height(tableView: UITableView) -> CGFloat {
             switch self {
+            case .collapse:
+                return UITableView.automaticDimension
             case .menu:
                 return 44
             case .content:
@@ -29,6 +32,8 @@ class InsideTableViewController: UIViewController {
             }
         }
     }
+    
+    var isCollapsed = true
     
     // initializes on code
     let contentViewController = PagingContentViewController()
@@ -73,6 +78,7 @@ class InsideTableViewController: UIViewController {
             contentViewController.dataSource = self
         }
         
+        tableView.estimatedRowHeight = 100
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -95,21 +101,34 @@ extension InsideTableViewController: UITableViewDelegate {
 
 extension InsideTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case Row.menu.rawValue:
+        guard let row = Row.init(rawValue: indexPath.row) else {
+            return UITableViewCell()
+        }
+        
+        switch row {
+        case Row.collapse:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "InsideCollapseCell", for: indexPath)
+                as! InsideCollapseCell
+            cell.setContent(isCollapsed: isCollapsed) { [weak self] in
+                guard let weakSelf = self else { return }
+                weakSelf.isCollapsed = !weakSelf.isCollapsed
+                weakSelf.tableView.beginUpdates()
+                weakSelf.tableView.reloadRows(at: [indexPath], with: .automatic)
+                weakSelf.tableView.endUpdates()
+            }
+            return cell
+        case Row.menu:
             let cell = tableView.dequeueReusableCell(withIdentifier: "InsideMenuCell", for: indexPath)
                 as! InsideMenuCell
             cell.setContent(controller: menuViewController)
             cell.contentView.addSubview(menuViewController.view)
             return cell
-        case Row.content.rawValue:
+        case Row.content:
             let cell = tableView.dequeueReusableCell(withIdentifier: "InsideContentCell", for: indexPath)
                 as! InsideContentCell
             cell.setContent(controller: contentViewController)
             cell.contentView.addSubview(contentViewController.view)
             return cell
-        default:
-            return UITableViewCell()
         }
     }
 }
